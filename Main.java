@@ -32,11 +32,7 @@ class BankAccount {
         this.isActive = isActive;
     }
 
-    public void withdraw(double amount)
-            throws InvalidAmountException,
-            WithdrawalLimitExceededException,
-            AccountInactiveException,
-            InsufficientBalanceException {
+    public void withdraw(double amount) throws InvalidAmountException, WithdrawalLimitExceededException, AccountInactiveException, InsufficientBalanceException {
 
         validateAmount(amount);
         validateAccountStatus();
